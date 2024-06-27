@@ -1,0 +1,72 @@
+marquee{
+
+    font-weight: bolder;
+    font-style: italic;
+    font-size: xx-large;
+    color: rgb(238, 146, 9);
+
+}
+
+body{
+
+    background-color: black;
+    background-image: url("https://images-cdn.ubuy.co.in/634e9673d2765619b765a602-sulobom-tic-tac-toe-board-game-tic-tac.jpg");
+
+}
+
+.start{
+
+    text-align: center;
+    font-size: larger;
+    color: #05ffe6fd;
+    font-weight: bolder;
+
+}
+
+.player{
+
+    text-align: center;
+    font-size: larger;
+    color: rgba(255, 238, 3, 0.99);
+    font-weight: bolder;
+
+}
+
+.square {
+
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px dotted black;
+    background-color: white;
+
+}
+
+#board {
+
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    flex-wrap: wrap;
+
+}
+
+.x{
+
+    font-weight: bolder;
+    font-size: 150px;
+    margin: 40px;
+    text-align: center;
+    color: green;
+
+}
+
+.o{
+
+    font-weight: bolder;
+    font-size: 150px;
+    margin: 40px;
+    text-align: center;
+    color: red;
+
+}
