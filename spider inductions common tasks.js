@@ -6,6 +6,7 @@ const sq = document.querySelectorAll('.square:nth-of-type(n)')
 
 let i = 0
 let k = 1
+let timer
 
 let j0,j1,j2,j3,j4,j5,j6,j7,j8
 j0=j1=j2=j3=j4=j5=j6=j7=j8=2
@@ -20,25 +21,28 @@ setTimeout(()=>{
 
 //assigner timer for chances of both players:
 
-if(i === 0){
+function setTimer() {
 
-    setTimeout(()=>{
+    timer = setInterval(()=>{
+
+    if(i === 0)
+    {
 
         i = 1
 
-    },15000)
+    }
 
-}
-
-else if(i === 1){
-
-    setTimeout(()=>{
+    else if(i === 1)
+    {
 
         i = 0
 
-    },15000)
+    }
 
+},15000)
 }
+
+setTimer()
 
 //adding event listeners for all boxes:
 
@@ -66,25 +70,8 @@ sq[0].addEventListener('click',(e)=>{
 
         j0 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -108,25 +95,8 @@ sq[0].addEventListener('click',(e)=>{
 
         j0 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -255,25 +225,8 @@ sq[1].addEventListener('click',(e)=>{
 
         j1 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -297,25 +250,8 @@ sq[1].addEventListener('click',(e)=>{
 
         j1 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -417,25 +353,8 @@ sq[2].addEventListener('click',(e)=>{
 
         j2 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -459,25 +378,8 @@ sq[2].addEventListener('click',(e)=>{
 
         j2 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -604,25 +506,8 @@ sq[3].addEventListener('click',(e)=>{
 
         j3 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -646,25 +531,8 @@ sq[3].addEventListener('click',(e)=>{
 
         j3 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -763,25 +631,8 @@ sq[4].addEventListener('click',(e)=>{
 
         j4 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -805,25 +656,8 @@ sq[4].addEventListener('click',(e)=>{
 
         j4 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -978,25 +812,8 @@ sq[5].addEventListener('click',(e)=>{
 
         j5 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1020,25 +837,8 @@ sq[5].addEventListener('click',(e)=>{
 
         j5 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1139,25 +939,8 @@ sq[6].addEventListener('click',(e)=>{
 
         j6 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1181,25 +964,8 @@ sq[6].addEventListener('click',(e)=>{
 
         j6 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1329,25 +1095,8 @@ sq[7].addEventListener('click',(e)=>{
 
         j7 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1371,25 +1120,8 @@ sq[7].addEventListener('click',(e)=>{
 
         j7 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1489,25 +1221,8 @@ sq[8].addEventListener('click',(e)=>{
 
         j8 = 1
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1531,25 +1246,8 @@ sq[8].addEventListener('click',(e)=>{
 
         j8 = 0
 
-        if(i === 0){
-
-            setTimeout(()=>{
-        
-                i = 1
-        
-            },15000)
-        
-        }
-        
-        else if(i === 1){
-        
-            setTimeout(()=>{
-        
-                i = 0
-        
-            },15000)
-        
-        }
+        clearInterval(timer)
+        setTimer()
 
         }
 
@@ -1652,20 +1350,4 @@ sq[8].addEventListener('click',(e)=>{
         }
             
 }, { once : true})
-
-
-
-
-        
-        
-
-
-
-        
-
-
-
-
-
-
 
